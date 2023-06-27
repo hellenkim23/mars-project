@@ -3,7 +3,6 @@ from os.path import join, dirname
 from dotenv import load_dotenv 
 from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
-client = MongoClient('mongodb+srv://hellen23:sparta@cluster0.p9rciek.mongodb.net/?retryWrites=true&w=majority')
 
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
